@@ -9,6 +9,7 @@
 
   <ItemGroup>
     <PackageReference Include="Azure.Identity" Version="1.11.3" />
+    <PackageReference Include="Microsoft.Identity.Client" Version="4.60.4" />
     <PackageReference Include="Microsoft.TeamFoundationServer.Client" Version="19.239.0-preview" />
     <PackageReference Include="Microsoft.VisualStudio.Services.InteractiveClient" Version="19.239.0-preview" />
   </ItemGroup>
