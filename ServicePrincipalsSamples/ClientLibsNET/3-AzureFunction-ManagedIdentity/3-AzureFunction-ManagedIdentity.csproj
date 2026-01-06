@@ -10,6 +10,7 @@
     <PackageReference Include="Microsoft.VisualStudio.Services.InteractiveClient" Version="19.239.0-preview" />
   </ItemGroup>
   <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Http" Version="2.1.22" />
     <None Update="host.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
