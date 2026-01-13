@@ -25,6 +25,7 @@
 
 	<ItemGroup>
   	<PackageReference Include="Microsoft.Extensions.Caching.Memory" Version="6.0.2" />
+  	<PackageReference Include="System.Text.Json" Version="8.0.5" />
 	  <None Update="Settings\**" CopyToOutputDirectory="PreserveNewest" />
 	</ItemGroup>
 </Project>
