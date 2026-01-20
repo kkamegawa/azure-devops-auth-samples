@@ -14,7 +14,7 @@
 		<PackageReference Include="Microsoft.AspNetCore.WebUtilities" Version="2.2.0" />
 		<PackageReference Include="Microsoft.Extensions.Configuration.Binder" Version="7.0.4" />
 		<PackageReference Include="Microsoft.Extensions.Http" Version="7.0.0" />
-		<PackageReference Include="Microsoft.Identity.Client" Version="4.60.4" />
+		<PackageReference Include="Microsoft.Identity.Client" Version="4.61.3" />
 		<PackageReference Include="Microsoft.Identity.Web.Certificate" Version="2.6.1" />
 		<PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="7.0.0" />
 		<PackageReference Include="Microsoft.Identity.Web.TokenCache" Versio11n="1.25.0" Version="2.6.1" />
@@ -24,6 +24,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
+  	<PackageReference Include="Azure.Identity" Version="1.11.4" />
   	<PackageReference Include="Microsoft.Extensions.Caching.Memory" Version="6.0.2" />
   	<PackageReference Include="System.Text.Json" Version="8.0.5" />
 	  <None Update="Settings\**" CopyToOutputDirectory="PreserveNewest" />
