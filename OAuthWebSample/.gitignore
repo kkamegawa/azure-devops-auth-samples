@@ -6,7 +6,7 @@
 *.user
 *.sln.docstates
 *.sln.ide/
-OAuthSample/Properties/PublishProfiles/
+OAuthWebSample/Properties/PublishProfiles/
 
 # Build results
 
@@ -156,3 +156,13 @@ $RECYCLE.BIN/
 
 # Mac desktop service store files
 .DS_Store
+
+
+# =====
+# Other
+# =====
+storage*
+db.lock
+*.pubxml
+
+.vs/
