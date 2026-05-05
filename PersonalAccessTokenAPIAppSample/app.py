@@ -58,14 +58,18 @@ def logout():
         app_config.AUTHORITY + "/oauth2/v2.0/logout" +
         "?post_logout_redirect_uri=" + url_for("index", _external=True))
 
+ALLOWED_ROUTES = {"pat_get_all", "pat_get", "pat_put", "pat_post", "pat_delete"}
+
 @app.route("/handle_input", methods=["POST"])
 def handle_input():
-    route = "/"
+    route = "index"
     for key, value in request.form.items():
         if key != "route":
             session[key] = value
         else:
             route = value
+    if route not in ALLOWED_ROUTES:
+        route = "index"
     return redirect(url_for(route))
 
 @app.route("/pat_get_all", methods=["GET"])
