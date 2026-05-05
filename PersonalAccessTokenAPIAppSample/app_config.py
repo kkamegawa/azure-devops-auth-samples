@@ -6,7 +6,9 @@ import os
 CLIENT_ID = "Enter_the_Application_Id_here" 
 # Application (client) ID of app registration
 
-CLIENT_SECRET = os.environ.get("CLIENT_SECRET", "Enter_the_Client_Secret_here")
+CLIENT_SECRET = os.environ.get("CLIENT_SECRET")
+if not CLIENT_SECRET:
+    raise ValueError("Need to define CLIENT_SECRET environment variable")
 # In a production app, we recommend you use a more secure method of storing your secret,
 # like Azure Key Vault. Set the CLIENT_SECRET environment variable before running.
 # Example: export CLIENT_SECRET="your-client-secret"
