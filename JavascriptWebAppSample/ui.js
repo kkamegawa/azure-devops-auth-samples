@@ -15,7 +15,7 @@ function welcomeUser(username) {
     signOutButton.classList.remove('d-none');
     titleDiv.classList.add('d-none');
     welcomeDiv.classList.remove('d-none');
-    welcomeDiv.innerHTML = `Welcome ${username}!`
+    welcomeDiv.textContent = `Welcome ${username}!`
     callApiButton.classList.remove('d-none');
 }
 

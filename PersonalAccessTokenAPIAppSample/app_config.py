@@ -6,13 +6,12 @@ import os
 CLIENT_ID = "Enter_the_Application_Id_here" 
 # Application (client) ID of app registration
 
-CLIENT_SECRET = "Enter_the_Client_Secret_here"
+CLIENT_SECRET = os.environ.get("CLIENT_SECRET")
+if not CLIENT_SECRET:
+    raise ValueError("Need to define CLIENT_SECRET environment variable")
 # In a production app, we recommend you use a more secure method of storing your secret,
-# like Azure Key Vault. Or, use an environment variable as described in Flask's documentation:
-# https://flask.palletsprojects.com/en/1.1.x/config/#configuring-from-environment-variables
-# CLIENT_SECRET = os.getenv("CLIENT_SECRET")
-# if not CLIENT_SECRET:
-#     raise ValueError("Need to define CLIENT_SECRET environment variable")
+# like Azure Key Vault. Set the CLIENT_SECRET environment variable before running.
+# Example: export CLIENT_SECRET="your-client-secret"
 
 AUTHORITY = "https://login.microsoftonline.com/Enter_the_Tenant_ID_Here"  # For multi-tenant app
 # AUTHORITY = "https://login.microsoftonline.com/Enter_the_Tenant_Name_Here"
